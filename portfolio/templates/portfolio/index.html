@@ -1,0 +1,217 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>splinkered</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/jpeg" href="{% static 'images/profile.jpg' %}">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/css/uikit.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit-icons.min.js"></script>
+    <style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+
+</head>
+
+<body>
+ <nav class="uk-navbar-container uk-background-transparent uk-width-1-1">
+    <div class="uk-container">
+        <div uk-navbar>
+
+            <div class="uk-navbar-center">
+
+                <div class="uk-navbar-center-left">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-active"><a href="#about">About</a></li>
+                        <li class="uk-active"><a href="#skills">Skills</a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-item uk-logo" href="#"><span uk-icon="icon: bolt; ratio: 2"></span></div>
+                <div class="uk-navbar-center-right">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<section class="uk-section uk-flex uk-flex-middle uk-height-viewport uk-background-cover" 
+         style="background-image: url('{% static 'images/hero.png' %}');"
+         uk-parallax="bgy: -400">
+    <div class="uk-container">
+        <div class="uk-grid-large uk-flex-middle" uk-grid>
+
+            <div class="uk-width-1-2@m uk-flex uk-flex-middle uk-flex-center"></div>
+
+            <div class="uk-width-1-2@m">
+                <div class="uk-card uk-card-default uk-card-body uk-card-large uk-box-shadow-medium glass-card">
+                    <h1 class="uk-heading-small uk-light">
+                       Tis <span class="uk-text-bold">SPLINKERED</span>
+                    </h1>
+
+                    <p class="uk-text-lead uk-light">
+                        Developer passionate about building applications that work on god's grace. 
+                        I learn, I build, I deploy.
+                    </p>
+
+                    <p class="uk-light">
+                        Code with purpose, design with intent.
+                    </p>
+
+                    <a href="#projects"
+                    style="background-color: #e5e7eb;color: #020617;"
+                       class="uk-button uk-width-1-1 uk-button-primary uk-button-large"
+                       uk-scroll>
+                        View My Work
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section id="about" class="uk-section uk-section-default">
+    <div class="uk-container uk-width-2xlarge">
+        <h2 class="uk-heading-line"><span>About Me</span></h2>
+        <p class="uk-text-large">            
+            Fresher at Maulana Azad National Institute of Technology (MANIT), Bhopal pursuing B.Tech. in Electrical Engineering.
+            Experienced in Dart, Java, SQLite and Full Stack development in Django, Flutter and core Java. 
+            Worked on multiple projects and completed courses alike.
+        </p>
+    </div>
+</section>
+
+<section id="skills" class="uk-section uk-section-muted">
+    <div class="uk-container">
+        <h2 class="uk-heading-line uk-text-center"><span>Skills</span></h2>
+
+        <div class="uk-grid-match uk-child-width-1-3@m uk-text-center" uk-grid>
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <span uk-icon="icon: code; ratio: 2"></span>
+                    <h3>Django & Backend</h3>
+                    <p>Auth, SQL, Scalable systems</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <span uk-icon="icon: phone; ratio: 2"></span>
+                    <h3>Flutter</h3>
+                    <p>Cross-platform apps with clean UI</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="uk-card uk-card-default uk-card-body">
+                    <span uk-icon="icon: crosshairs; ratio: 2"></span>
+                    <h3>Java</h3>
+                    <p>Core Java, JSwing, Real world projects</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="uk-section uk-section-default">
+    <div class="uk-container">
+        <h2 class="uk-heading-line uk-text-center"><span>Projects</span></h2>
+
+        <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+            <div>
+            <div class="uk-card uk-card-default ">
+                <div class="uk-card-header">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                       
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">FiniZen - Finance Made Zen <br> Released on Google Play Store</h3>
+                            <p class="uk-text-meta uk-margin-remove-top">November 2026</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card-body">
+                    <p>Smart, simple, and secure. Track, save, plan, and achieve your financial goals while keeping your money life Zen. It is quite crude but gets the job done… Made with the simple goal, to manage my cash in college.</p>
+                </div>
+                <div class="uk-card-footer">
+                    <a href="https://finizen.42web.io/" class="uk-button uk-button-secondary uk-button-large uk-width-1-1">Visit Site</a>
+                </div>
+            </div></div>
+
+            <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-header">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                       
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">Jynx.in - A social media <br> Now retired but peaked at 120 active users</h3>
+                            <p class="uk-text-meta uk-margin-remove-top">January 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card-body">
+                    <p>Made Frontend for Jynx.in which I spent 6 good months of my time in, from creating wireframes to solving bugs and polishing to get that feel.</p>
+                </div>
+                <div class="uk-card-footer">
+                    <a href="https://yashakarsh23.pythonanywhere.com/" class="uk-button uk-button-secondary uk-button-large uk-width-1-1">Visit Site</a>
+                </div>
+            </div></div>
+
+            <div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-header">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                       
+                        <div class="uk-width-expand">
+                            <h3 class="uk-card-title uk-margin-remove-bottom">VCEP - Election Portal <br> Vishwajyot Council Election Portal</h3>
+                            <p class="uk-text-meta uk-margin-remove-top">August 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-card-body">
+                    <p>An app developed in core Java and JSwing with a custom coded library to convert the data to excel sheets for my school elections, used by over 700 students.</p>
+                </div>
+                <div class="uk-card-footer">
+                    <a href="https://github.com/splinkered/VCEP" class="uk-button uk-button-secondary uk-button-large uk-width-1-1">Visit Git</a>
+                </div>
+            </div></div>
+
+           
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="uk-section uk-section-primary">
+    <div class="uk-container uk-text-center">
+        <h2>Contact Me</h2>
+        <div class="uk-margin">
+            <a href="mailto:pragneshwpatil@email.com" uk-icon="icon: mail; ratio: 3" class="uk-margin-small-right"></a>
+            <a href="https://github.com/splinkered" uk-icon="icon: github; ratio: 3" class="uk-margin-small-right"></a>
+            <a href="https://www.linkedin.com/in/splinkered" uk-icon="icon: linkedin; ratio: 3"></a>
+        </div>
+    </div>
+</section>
+
+<footer class="uk-section uk-section-small uk-text-center uk-section-secondary">
+    <p>© 2026 Pragnesh Patil. Fueled by caffeine.</p>
+</footer>
+
+</body>
+</html>
